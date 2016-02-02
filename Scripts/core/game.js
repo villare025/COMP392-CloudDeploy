@@ -151,6 +151,7 @@ function addControl(controlObject) {
         folder.add(controlObject.points[index], 'y', -10, 10);
         folder.add(controlObject.points[index], 'z', -10, 10);
     }
+    gui.addColor(plane, 'color1');
 }
 function addStatsObject() {
     stats = new Stats();
@@ -192,4 +193,7 @@ function setupCamera() {
     camera.lookAt(new Vector3(5, 0, 0));
     console.log("Finished setting up Camera...");
 }
+var changeColor = function () {
+    this.color1 = [0, 128, 255];
+};
 //# sourceMappingURL=game.js.map

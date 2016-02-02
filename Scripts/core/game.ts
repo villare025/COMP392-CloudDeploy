@@ -184,6 +184,7 @@ function addControl(controlObject: Control): void {
         folder.add(controlObject.points[index], 'y', -10, 10);
         folder.add(controlObject.points[index], 'z', -10, 10);
     }
+    gui.addColor(plane, 'color1');
 }
 
 function addStatsObject() {
@@ -235,4 +236,7 @@ function setupCamera(): void {
     camera.position.z = 20;
     camera.lookAt(new Vector3(5, 0, 0));
     console.log("Finished setting up Camera...");
+}
+var changeColor = function(){
+    this.color1=[0,128,255];
 }
